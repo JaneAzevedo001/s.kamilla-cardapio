@@ -11,7 +11,7 @@
     <header>
         <nav>           
           <a class="logo" href="#">S. KAMYLLA</a>          
-          <div class="mobile-menu">
+          <div class="mobile-menu" onclick="toggleMenu()">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -79,6 +79,13 @@
 </main>
 
 <script>
+  function toggleMenu() { 
+        const navList = document.querySelector('.nav-list'); 
+        const mobileMenu = document.querySelector('.mobile-menu'); 
+        navList.classList.toggle('active'); 
+        mobileMenu.classList.toggle('active'); 
+    }
+    
     function showInfo(item) {
         let infoContent = document.getElementById('infoContent');
         switch(item) {
