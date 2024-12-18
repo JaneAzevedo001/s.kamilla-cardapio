@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. KAMYLLA - Salgados</title>
+    
+</head>
+<body>
+   
+    <h1>Salgados</h1>
+    <div class="menu">
+        <div class="item">
+            <img src="imagens/2.png">
+            <button onclick="showInfo('pasteis')">Consulte Mais Informações</button>
+        </div>
+        <div class="item">
+            <img src="imagens/6.png">
+            <button onclick="showInfo('paes')">Consulte Mais Informações</button>
+        </div>
+        <div class="item">
+            <img src="imagens/1.png">
+            <button onclick="showInfo('coxinhas')">Consulte Mais Informações</button>
+        </div>
+        <div class="item">
+            <img src="imagens/5.png">
+            <button onclick="showInfo('tapiocas')">Consulte Mais Informações</button>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="item">
+            <img src="imagens/3.png">
+            <button onclick="showInfo('bolo1')">Consulte Mais Informações</button>
+        </div>
+        <div class="item">
+            <img src="imagens/4.png">
+            <button onclick="showInfo('bolo2')">Consulte Mais Informações</button>
+        </div>
+        <div class="item">
+            <img src="imagens/11.png">
+            <button onclick="showInfo('mingau')">Consulte Mais Informações</button>
+        </div>
+        <div class="item">
+            <img src="imagens/12.png">
+            <button onclick="showInfo('banana')">Consulte Mais Informações</button>
+        </div>
+    </div>
+    <div class="pix">
+        <p>Chave Pix</p>
+        <p>Soraia Garcia Gomes</p>
+        <p>
+            <img width="200px" height="200px" src="imagens/pix.png">
+        </p>
+    </div>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">X</span>
+            <div id="infoContent"></div>
+        </div>
+    </div>
+
+</body>
+</html>
